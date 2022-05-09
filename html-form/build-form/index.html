@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Favorite Programming Language Form</title>
+    </head>
+    <body> 
+        <h1>Favorite Programming Language Form</h1>
+        <form action="/form-handling/url" mehtod="post">
+            <fieldset>
+                <legend>Add user</legend>
+
+                <!-- Phase 2: Basic Information -->
+
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="first_name"> 
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="last_name"> 
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"> 
+                </div>
+
+                <!-- Phase 3: Drop Down Menu -->
+
+                <div>
+                    <label for="status">Status</label>
+                    <select id="status" name="status">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+
+                <!-- Phase 4: Radio Buttons  -->
+
+                <div>
+                    <p>
+                        Choose your favorite programming language. 
+                    </p>
+                
+                    <input type="radio" id="html" name="fav_language">
+                    <label for="html">HTML</label>
+
+                    <br>
+
+                    <input type="radio" id="css" name="fav_language"> 
+                    <label for="css">CSS</label>
+
+                    <br>
+
+                    <input type="radio" id="javascript" name="fav_language"> 
+                    <label for="javascript">Javascript</label>
+
+                    <br>
+
+                </div>
+
+                <br>
+
+                <!-- Phase 5: Additional Information -->
+
+                <div> 
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments">
+
+
+                    </textarea>
+                </div>
+
+                <br>
+                <!-- Phase 6: Submission  -->
+                <div>
+                    <input type="checkbox" id="newsletter">
+                    <label for="newsletter">Sign up to newsletter</label>
+
+                    <input type="checkbox" id="terms">
+                    <label for="terms">Agree to terms and conditions</label>
+                </div>
+
+                <br>
+
+                <div> 
+                    <button type="submit">Submit</label>
+                </div>
+
+
+            </fieldset>
+        </form>
+    </body>
+</html>
