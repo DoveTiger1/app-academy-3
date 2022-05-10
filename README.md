@@ -1,6 +1,6 @@
 # aa-projects
 
-## [a/A Open](https://my.appacademy.io/) :: Software Engineering 2022 Curriculum 
+## [a/A Open](https://my.appacademy.io/) :: 2022 Software Engineering Curriculum 
 
 ```
 Start date: 8/05/2022
