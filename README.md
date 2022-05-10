@@ -1,6 +1,6 @@
 # aa-projects
 
-collection of perosonal projects from aa
+Collection of personal projects from [App Academy](https://my.appacademy.io/)
 
 ## HTML 
 1. [01-hello-html](/01-hello-html) 
