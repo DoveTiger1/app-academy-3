@@ -2,7 +2,10 @@
 
 ## [a/A Open](https://my.appacademy.io/) :: Software Engineering 2022 Curriculum 
 
-
+```
+Start date: 8/05/2022
+Completion date: ~
+```
 ### Web Development Fundamentals
 
 - Javascript Fundamentals 
@@ -117,8 +120,5 @@
 - Docker Compose
 - Microservices Applied
 
-```
-Curriculum start date: 8/05/2022.
-Curriculum completion date: ~
-```
+
 
