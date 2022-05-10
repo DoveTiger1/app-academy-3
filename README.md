@@ -1,5 +1,7 @@
 # aa-projects
 
+collection of perosonal projects from aa
+
 ## HTML 
 1. [01-hello-html](/01-hello-html) 
 2. [02-html-form](/02-html-form)
