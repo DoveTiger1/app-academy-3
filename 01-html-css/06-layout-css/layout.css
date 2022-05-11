@@ -1,0 +1,70 @@
+legend { 
+    display: flex; 
+    border: 1px solid black;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-left: 50px; 
+}
+
+fieldset { 
+    box-sizing: border-box; 
+    width: 500px; 
+    height: 500px; 
+    display: flex; 
+    justify-content: center;
+    margin: 100px auto auto auto; 
+}
+
+div.container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+    box-sizing: border-box;
+    text-align: center;
+    box-sizing: border-box;
+    padding: auto; 
+}
+
+#firstName { 
+    display: flex;
+    width: 200px; 
+}
+
+#lastName {
+    display: flex; 
+    width: 200px; 
+}
+
+#email { 
+    display: flex; 
+    width: 200px; 
+}
+
+div#status { 
+    display: inline-block;
+    position: relative; 
+    
+}
+
+#language-select  { 
+    display: flex;
+    flex-direction: row;
+}
+
+#comments { 
+    /* how to contain comments in fieldset */
+    display: flex;
+    max-width: max-content; 
+    max-height: max-content;
+}
+
+#signup { 
+    display: flex;
+}
+
+#terms { 
+    display: flex;
+}
