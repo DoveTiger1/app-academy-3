@@ -116,28 +116,10 @@ function isSubString(searchString, subString) {
     or lower case, and `false` if otherwise. */
     // Your code here
 
-    let lowerCase = subString.toLowerCase(); 
-    let upperCase = subString.toUpperCase(); 
-    // if (searchString.includes(subString)) { 
-    //     return true; 
-    // } else if (searchString.includes(lowerCase)) { 
-    //     return true; 
-    // } else if (searchString.includes(upperCase)) { 
-    //     return true;
-    // } else { 
-    //     return false; 
-    // }
-
-    if (searchString.indexOf(subString) >= 0) { 
-        return true; 
-    } else if (searchString.indexOf(lowerCase) >= 0) { 
-        return true; 
-    } else if (searchString.indexOf(upperCase) >= 0) {
-        return true; 
-    } else { 
-        return false; 
-    }
-
+    let lowersubString = subString.toLowerCase(); 
+    let lowersearchString = searchString.toLowerCase(); 
+    
+    return lowersearchString.includes(lowersubString); 
 };
 
 function aCounter(word) {
