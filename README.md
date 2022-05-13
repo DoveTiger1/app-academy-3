@@ -16,7 +16,7 @@ Completion date: ~
 - Setting Up Your Environment II
 - Intermediate JavaScript
 
-### 2:: JavaScript Fundamentals
+### 2 :: JavaScript Fundamentals
 - Introduction to JavaScript
 - Control Flow
 - Intermediate JavaScript
@@ -114,7 +114,7 @@ Completion date: ~
 - SQLAlchemy Basics 
 - Migrations
 
-### 16 :; Docker and Microservices
+### 16 :: Docker and Microservices
 - Docker Basics 
 - Docker Images 
 - Docker Compose
