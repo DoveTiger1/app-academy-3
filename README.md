@@ -6,7 +6,7 @@
 Start date: 8/05/2022
 Completion date: ~
 ```
-### Web Development Fundamentals
+### 1 :: Web Development Fundamentals
 
 - Javascript Fundamentals 
 - Setting Up Your Environment I
@@ -16,7 +16,7 @@ Completion date: ~
 - Setting Up Your Environment II
 - Intermediate JavaScript
 
-### JavaScript Fundamentals
+### 2 :: JavaScript Fundamentals
 - Introduction to JavaScript
 - Control Flow
 - Intermediate JavaScript
@@ -25,7 +25,7 @@ Completion date: ~
 - Additional Practices
 - Advanced Array Methods
 
-### Intermediate JavaScript
+### 3 :: Intermediate JavaScript
 - Local JavaScript
 - Objects
 - Callbacks
@@ -34,14 +34,14 @@ Completion date: ~
 - IIFEs and Recalls
 - Asynchronicity
 
-### TDD and OOP
+### 4 :: TDD and OOP
 - Basic Coding Principles
 - Object-Oriented Programming
 - Context in JavaScript
 - TDD Basics
 - Intermediate TDD
 
-### Data Structures and Algorithms
+### 5 :: Data Structures and Algorithms
 - Code Performance
 - Data Structures I
 - Whiteboarding I
@@ -51,26 +51,26 @@ Completion date: ~
 - Graphs 
 - Whiteboarding II 
 
-### HTML and CSS 
+### 6 :: HTML and CSS 
 - CSS Fundamentals
 - Intermediate CSS
 - Advanced CSS
 
-### Servers, APIs, and Promises
+### 7 :: Servers, APIs, and Promises
 - HTTP Servers I 
 - HTTP Servers II 
 - Asynchronous JavaScript
 - APIs
 - Networks
 
-### Frontend JavaScript
+### 8 :: Frontend JavaScript
 - The Browser 
 - Working with the DOM
 - Handling Events and Data
 - Browser Storage
 - Capstone Project
 
-### Express & SQL 
+### 9 :: Express & SQL 
 - Express Basics 
 - Intermediate Express
 - Express Capstone 
@@ -79,28 +79,28 @@ Completion date: ~
 - SQL Capstone Project 
 - Advanced SQL Topics 
 
-### Express & Sequelize 
+### 10 :: Express & Sequelize 
 - Sequelize Foundations
 - Relationships in Sequelize
 - Real World Sequelize Applications
 - Express & SQL Capstone
 
-### Web Security and Authentication
+### 11 :: Web Security and Authentication
 - Web Application Security
 - Backend Authentication
 
-### React 
+### 12 :: React 
 - React Basics
 - React Hooks and Forms
 - React Context and Jest
 - Class Components
 
-### Redux and Authentication 
+### 13 :: Redux and Authentication 
 - Redux Basics 
 - Redux Thunk
 - Full Stack Capstone
 
-### Python
+### 14 :: Python
 - Data Types
 - Functions and Statements
 - Structured Data I 
@@ -109,12 +109,12 @@ Completion date: ~
 - Python Environment and Testing
 - Python Capstone
 
-### Flask, SQLAlchemy, and Forms
+### 15 :: Flask, SQLAlchemy, and Forms
 - Flask Basics 
 - SQLAlchemy Basics 
 - Migrations
 
-### Docker and Microservices
+### 16 :: Docker and Microservices
 - Docker Basics 
 - Docker Images 
 - Docker Compose
