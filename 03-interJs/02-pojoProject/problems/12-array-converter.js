@@ -16,12 +16,12 @@ console.log(arrayConverter(["apple", "apple"])); // => {apple: 2}
 function arrayConverter(array) {
   // your code here
 
-  let obj = []; 
-
+  let obj = {}; 
   //            input => if key is in object increment by one 
   //            if not in the object create a new key and intialise it to 1
-  array.forEach(key => { key in obj ? obj[key]++ : obj[key] = 1; } )
-
+  array.forEach(key => { 
+    key in obj ? obj[key]++ : obj[key] = 1; 
+  }); 
   return obj;
 
 }

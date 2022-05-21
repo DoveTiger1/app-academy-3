@@ -27,43 +27,53 @@ let peeps = [
 console.log(countScores(peeps)); //=> { Anthony: 4, Fred: 4, Winnie: 6 }
 ***********************************************************************/
 
+let peeps = [
+  {name: "Anthony", score: 2},
+  {name: "Winnie", score: 2},
+  {name: "Fred", score: 2},
+  {name: "Winnie", score: 2},
+  {name: "Fred", score: 2},
+  {name: "Anthony", score: 2},
+  {name: "Winnie", score: 2}
+];
+console.log(countScores(peeps)); //=> { Anthony: 4, Fred: 4, Winnie: 6 }
+
 function countScores(people) {
   // your code here
-    // your code here
-    let objects = {}
+  let objects = {}
 
-    people.forEach(function(ele) {
-      // get the values only of each key => [1]
-      let valOfKeys = Object.values(ele)[1];
-  
-      for (let key in ele) {
-        // destructure and access the key only which is 'name'
-        let {name} = ele;
-  
-        // if name is found, push the values of each keys as an array
-        if (name in objects) {
-          objects[name].push(valOfKeys);
-          break // will have to put break here, else it will loop again
-        } else {
-          objects[name] = []; // set each key values as an array
-        }
+  people.forEach(function(ele) {
+    // get the values only of each key => [index 1]
+    let valOfKeys = Object.values(ele)[1];
+
+    for (let key in ele) {
+      // destructure and access the key only which is 'name'
+      let {name} = ele;
+
+      // if name is found, push the values of each keys as an array
+      if (name in objects) {
+        objects[name].push(valOfKeys);
+        break // will have to put break here, else it will loop again
+      } else {
+        objects[name] = []; // set each key values as an array
       }
-    });
-  
-    getSum(objects);
-    return objects;
-  }
-  
-  // get sum of key values
-  function getSum(obj) {
-    for (let key in obj) {
-      let sum = obj[key].reduce(function(acc, num) {
-        return acc + num;
-      }, 0);
-      obj[key] = sum;
     }
-  };
+  });
+
+  getSum(objects);
+  return objects;
 }
+  
+// get sum of key values
+function getSum(obj) {
+  for (let key in obj) {
+    let sum = obj[key].reduce(function(acc, num) {
+      return acc + num;
+    }, 0);
+    obj[key] = sum;
+  }
+};
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = countScores;

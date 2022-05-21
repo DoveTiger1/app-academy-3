@@ -17,8 +17,9 @@ function stringConverter(string) {
 
   // converts string into an array as ssuch 
   // "foo" => ["f", "o", "o"]
-  Array.from(string).forEach(letter => { 
-    letter in obj ? obj[letter]++ : obj[letter] = 1
+  // Array.from(string) = string.split("")
+  string.split("").forEach(letter => { 
+    letter in obj ? obj[letter]++ : obj[letter] = 1; 
   }); 
 
   return obj; 
