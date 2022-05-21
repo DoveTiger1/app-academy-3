@@ -1,4 +1,4 @@
-# :open_file_folder: aa-projects
+# 📁 aa-projects
 
 ## [a/A Open](https://my.appacademy.io/) :: 2022 Software Engineering Curriculum 
 
