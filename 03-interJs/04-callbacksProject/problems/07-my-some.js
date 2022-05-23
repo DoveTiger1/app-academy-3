@@ -23,8 +23,18 @@ let result3 = mySome(['soup', 'noodles', 'bike', 'ship'], function(ele) {
 console.log(result3);   // true
 *******************************************************************************/
 
-let mySome = function() {
+let mySome = function(arr, cb) {
+    // iterate through each element in the array 
+    for (let ele of arr) { 
+        // if at least one element of the array return true in the callback
+        if (cb(ele) === true) { 
+            // return true
+            return true; 
+        }
+    }
 
+    // otherwise return false 
+    return false; 
 };
 
 

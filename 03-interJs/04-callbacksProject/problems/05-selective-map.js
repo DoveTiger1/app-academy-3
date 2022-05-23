@@ -41,15 +41,19 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 - What do you expect each callback function to be returning?
 - How many times are you calling each callback function?
 *******************************************************************************/
+let selectiveMap = function(arr, cb1, cb2) {
+    let newArr = []; 
 
-let selectiveMap = function() {
-
+    for (let ele of arr) { 
+        if (cb1(ele) === true) { 
+            newArr.push(cb2(ele)); 
+        } else { 
+            newArr.push(ele); 
+        }
+    }
+    
+    return newArr; 
 };
-
-
-
-
-
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 module.exports = selectiveMap;

@@ -16,18 +16,15 @@ let result2 = myMap(['run', 'Forrest'], function (el) {
 console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 *******************************************************************************/
 
-let myMap = function(array, cb) {
-    let neArr = []; 
+let myMap = function(arr, cb) {
+    let newArr = []; 
 
-    for (let i = 0; i < array.length; i++) { 
-        let ele = array[i]; 
-        let result = cb(ele, i, array); 
-        newArr.push(result); 
+    // iterates thorugh each element in the array 
+    for (let ele of arr) { 
+        // passes the element into the callback function 
+        // stores it or push inside the new array
+        newArr.push(cb(ele)); 
     }
-
-    // for (let ele of array) { 
-    //     let result = cb(ele, i, array); 
-    // }
 
     return newArr; 
 };

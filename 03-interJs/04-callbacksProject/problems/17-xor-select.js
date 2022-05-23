@@ -31,14 +31,29 @@ console.log(
 // [ 'art', 'app', 'buttery' ]
 *******************************************************************************/
 
-let xorSelect = function() {
+let xorSelect = function(arr, cb1, cb2) {
+  // cannot use arr map as arr map must return a value to pass into the new array 
+  // return arr.map(el => { 
+  //   if (cb1(el) === true && cb2(el) === false) { 
+  //     return el; 
+  //   } else if (cb1(el) === false && cb2(el) === true) { 
+  //     return el; 
+  //   }
+  // }); 
 
+  let newArr = []; 
+
+  for (let i = 0; i < arr.length; i++) { 
+    let el = arr[i]; 
+    if (cb1(el) === true && cb2(el) === false) { 
+      newArr.push(el); 
+    } else if (cb1(el) === false && cb2(el) === true) { 
+      newArr.push(el); 
+    }
+  }
+
+  return newArr; 
 };
-
-
-
-
-
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 module.exports = xorSelect;

@@ -10,10 +10,18 @@ console.log(minValueCallback([64, 25, 49, 9, 100], Math.sqrt));  // 3
 
 *******************************************************************************/
 
-let minValueCallback = function() {
+let minValueCallback = function(arr, cb) {
+    // if callback is not passed into 
+    // callback will be registered as an undefined value
 
+    // rest operator works inside as an argument 
+    if (cb === undefined) { 
+        // ...arr works as a spread operator 
+        return Math.min(...arr); 
+    }
+    
+    return cb(Math.min(...arr)); 
 };
-
 
 
 

@@ -29,8 +29,20 @@ console.log(chainMap(4, square, half));         // 8
 console.log(chainMap(4, half, square));         // 4
 *******************************************************************************/
 
-let chainMap = function() {
+let chainMap = function(value, ...cb) {
+    // treat spread callback argument as an array 
+    // to index the first callback => cb[0](value)
+    
+    // result = firstcallback(intial value)
+    let result = cb[0](value); 
 
+    for (let i = 1; i < cb.length; i++) { 
+        // reassign result to the next callback by passing its 
+        // previous result into the callback function
+        result = cb[i][result]; 
+    }
+
+    return result; 
 };
 
 
