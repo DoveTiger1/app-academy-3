@@ -1,4 +1,4 @@
-// Scopes 
+// Block Scopes 
 
 // 1. Secruity 
 // ensures that variables can only be acessed to pre-defined 
