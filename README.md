@@ -1,7 +1,5 @@
 # 📁 seori-project
 
-## [a/A Open](https://my.appacademy.io/) 
-
 ```
 Start date: 8/05/2022
 Completion date: ~
