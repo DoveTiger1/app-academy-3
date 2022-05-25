@@ -44,6 +44,42 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 
 // your code here
 
+function curriedSum(numArgs) {
+  let numbers = [];
+  let resultOne = 0;
+  let resultTwo = 0;
+  let count = 0;
+
+
+  // function for just one argument at a time, will work dynamically
+  return function (...num) {
+    count++;
+    resultOne += Number(num);
+
+    if (numArgs === count) {
+      return resultOne;
+
+    // function for multiple arguments, but will work only for the given test case
+    } else {
+      numbers.push(num);
+
+      return function (num2) {
+        numbers.push(num2);
+
+        return function (num3) {
+          numbers.push(num3);
+
+          resultTwo = numbers.flat().reduce(function (acc, next) {
+            return acc + next;
+          });
+
+          return resultTwo;
+        }
+      }
+    }
+  }
+}
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

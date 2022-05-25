@@ -23,6 +23,25 @@ console.log(smoothie2("pineapple"));
 ***********************************************************************/
 
 // your code here
+const smoothieMachine = (...params1) => { 
+  const smoothie = "I'm having a smoothie with "; 
+  let newArr = []; 
+  
+  return (...params2) => {  
+    newArr.push(...params1, ...params2); 
+    return smoothie + newArr.join(" and "); 
+  }
+}; 
+
+let smoothie1 = smoothieMachine();
+
+console.log(smoothie1("milk"));
+// prints "I'm having a smoothie with milk"
+console.log(smoothie1("kale", "spinach"));
+// prints "I'm having a smoothie with milk and kale and spinach"
+console.log(smoothie1("honey", "pears", "berries"));
+
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

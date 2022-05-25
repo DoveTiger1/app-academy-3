@@ -17,8 +17,24 @@ console.log(rudePerson2("I love dogs")); // prints "I yo love yo dogs"
 ***********************************************************************/
 
 // your code here!
+let interrupter = (inter) => { 
+  // argument sentence passed into the arrow function 
+  return (sentence) => { 
+    // split the sentence into array that we can iterate through 
+    let arr = sentence.split(" "); 
 
-
+    // return a new array map 
+    return arr.map((word, i) => { 
+      // check if the index is not the last word 
+      if (i !== arr.length - 1) { 
+        // return the word with the interruption 
+        return word += ` ${inter}`; 
+      }
+      // return the word by itself if it is the last word index
+      return word; 
+    }).join(" "); // join the array into a string 
+  }; 
+}; 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
