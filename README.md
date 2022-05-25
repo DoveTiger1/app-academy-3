@@ -1,6 +1,4 @@
-# 📁 aa-projects
-
-## [a/A Open](https://my.appacademy.io/) :: 2022 Software Engineering Curriculum 
+# 📁 seori-project
 
 ```
 Start date: 8/05/2022
