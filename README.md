@@ -1,4 +1,4 @@
-# 📁 seori-project
+# 🟣 seori-project
 
 ```
 Start date: 8/05/2022
