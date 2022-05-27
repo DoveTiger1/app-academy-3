@@ -17,6 +17,17 @@ factorial(5); // 120
 ***********************************************************************/
 
 // your code here
+const factorial = (num) => { 
+  // assume num is greater than or equal to 1
+
+  if (num === 1) return 1; 
+
+  return num * factorial(num - 1); 
+  // 5 * factorial(4)
+  // 5 * 4 * factorial(3)
+  // 5 * 4 * 3 * factorial(2)
+  // 5 * 4 * 3 * 2 * factorial(1)
+}; 
   
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {

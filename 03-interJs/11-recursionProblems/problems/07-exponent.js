@@ -22,7 +22,21 @@ exponent(5, 5); // 3125
 
 function exponent(b, n) {
   // your code here
+
+  // base case : if the power is return 1
+  if (n === 0) { 
+    return 1; 
+  } 
+
+  // recursive case 
+  if (n > 0) { // if power is positive then multiply base by itself 
+    return b * exponent(b, n - 1); 
+  } else { // if power is negative then divide the base by itself
+    return exponent(b, n + 1) / b;
+  }
 }
+
+console.log(exponent(2, -2)); 
   
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {

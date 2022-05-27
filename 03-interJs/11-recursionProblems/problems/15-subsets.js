@@ -15,7 +15,17 @@ Hint: For subsets([1, 2, 3]), there are two kinds of subsets:
 ***********************************************************************/
 
 // your code here
+function subsets(arr) { 
+  if (arr.length === 0) return []; 
 
+  return arr.reduce((subsets, value) => subsets.concat(
+     subsets.map(set => [value,...set])
+    ),
+    [[]]
+  );
+}
+
+console.log(subsets([1, 2, 3]));
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = subsets;

@@ -13,11 +13,11 @@ sumToN(-8)  // returns null
 
 // your code here
 const sumToN = (num) => {
-  if (num < 0) return null; 
+  // base case
+  if (num === 0) return null; 
 
-  if (num === 0) return 0; 
-
-  return sumToN(num - 1) + num; 
+  // recursive case
+  return num + sumToN(num - 1); 
 }; 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/

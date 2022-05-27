@@ -13,7 +13,17 @@ reverse(""); // ""
 ***********************************************************************/
 
 // your code here
+const reverse = (string) => { 
+  if (string.length === 0) { 
+    return ""; 
+  }
 
+  let newString = reverse(string.slice(1, string.length)); 
+  newString += string[0]; 
+  return newString; 
+}; 
+
+console.log(reverse("house")); 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = reverse;

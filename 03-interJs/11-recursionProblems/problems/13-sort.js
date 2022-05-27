@@ -23,8 +23,25 @@ sort([]); // []
 
 function sort(nums, sorted = []) {
   // your code here
+
+  if (nums.length === 0) { 
+    return sorted; 
+  }
+
+  // find smallest num in nums array 
+  const min = Math.min(...nums); 
+
+  // push the smallest num in nums array 
+  sorted.push(min); 
+
+  // remove the smallest num in nums array 
+  nums.splice(nums.indexOf(min), 1);
+
+  // recursively call sort with updated nums array and sorted array 
+  return sort(nums, sorted); 
 }
 
+console.log(sort([4,1,6,3,1,7])); // [1, 1, 3, 4, 6, 7])
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = sort;

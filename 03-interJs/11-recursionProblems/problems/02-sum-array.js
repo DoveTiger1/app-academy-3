@@ -11,7 +11,21 @@ sumArray([1, 2, 3, 4, 5]); // 15
 ***********************************************************************/
 
 // your code here
-  
+const sumArray = (arr) => { 
+  // base case : empty array 
+  if (arr.length === 0) { 
+    return 0; 
+  }
+
+  // add the first num slice the array from 1 to arrays length
+  return arr[0] + sumArray(arr.slice(1, arr.length)); 
+};  
+
+
+console.log(sumArray([1, 2, 3])); //  6
+sumArray([0, 1, -3]); //  -2
+sumArray([1, 2, 3, 4, 5]); // 15
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = sumArray;

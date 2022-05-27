@@ -20,6 +20,20 @@ fibonacci(10); // 55
 ***********************************************************************/
 
 // your code here
+const fibonacci = (n) => {
+  // base case 
+  if (n === 0) return 0; 
+  if (n === 1) return 1; 
+
+  // recursive case 
+  return fibonacci(n - 1) + fibonacci(n - 2); 
+  // fibonacci(4 - 1) + fibonacci (4 - 2) 
+  // fibonacci(2) + fibonacci (1) + fibonacci (1) + fibonacci (0)
+  // fibonacci (1) + fibonacci(0) + fibonacci (1) + fibonacci (1) + fibonacci(0) 
+  // 1 + 0 + 1 + 1 + 0
+}; 
+
+console.log(fibonacci(10)); 
   
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {

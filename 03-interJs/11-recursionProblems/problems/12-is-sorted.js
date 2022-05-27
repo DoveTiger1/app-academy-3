@@ -12,6 +12,22 @@ isSorted([5, 4, 3, 2, 1]); // false
 
 // your code here
 
+const isSorted = (arr) => { 
+  // base case : in ascending order return true
+  if (arr.length === 0) { 
+    return true; 
+  }
+
+  // recursive case 
+  // if not in ascending order return false
+  // only need to scan two adjacent elements in the array 
+  if (arr[0] > arr[1]) { 
+    return false; 
+  } else { 
+    return isSorted(arr.slice(1, arr.length)); 
+  }
+}; 
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = isSorted;
