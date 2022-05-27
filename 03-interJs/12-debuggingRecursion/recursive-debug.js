@@ -14,6 +14,12 @@ doForAll(["a", "b", "c"]), (x) => x.toUpperCase()); // => ["A", "B", "C"]
 ***********************************************************************/
 
 function doForAll(arr, action) {
+  // base case
+  if (arr.length === 0) { 
+    return [];
+  }
+  
+  // recursive case 
   return [action(arr[0]), ...doForAll(arr.slice(1), action)];
 }
 
