@@ -35,7 +35,7 @@ function subsets(nums) {
   // return arr.reduce((subset, value) => subset.concat(subset.map(set => [...set, value])), [[]]);
 }
 
-console.log(subsets([1, 2, 3]));
+console.log(subsets([1, 2, 3, 4]));
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
   module.exports = subsets;
