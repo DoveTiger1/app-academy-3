@@ -6,7 +6,7 @@ console.log(hello) // undefined
 let goodbye; 
 console.log(goodbye); // undefined 
 
-const bye; 
+const bye = hi; 
 console.log(bye); // error 
 // Consts cannot be reassigned thus must be assigned during its 
 // intial declaration 
