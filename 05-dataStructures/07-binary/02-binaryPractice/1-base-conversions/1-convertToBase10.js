@@ -4,8 +4,17 @@
 
 const convertToBase10 = str => {
   // Your code here
-  
+
+  if (str[0] === '0' && str[1] === 'b') { // Binary numbers 
+    return parseInt(str.slice(2), 2); 
+  }
+
+  if (str[0] === '0' && str[1] === 'x') { // Hexadecimal 
+    return parseInt(str, 16);
+  }
+
 };
+
 
 /******************************************************************************/
 
