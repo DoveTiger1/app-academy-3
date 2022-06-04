@@ -4,6 +4,15 @@
 
 const convertToBase2 = element => {
   // Your code here
+  let base2 = "0b" 
+  if (element[0] === "0" && element[1] === "x") {
+    let base10 = parseInt(element.slice(2), 16); 
+    base2 += base10.toString(2);
+  } else { 
+    base2 += element.toString(2); 
+  } 
+  
+  return base2; 
 };
 
 /******************************************************************************/
