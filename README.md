@@ -1,9 +1,14 @@
+![](https://img.shields.io/badge/-zes1092-blueviolet)  [![GitHub issues](https://img.shields.io/github/issues/zes1092/seori-project)](https://github.com/zes1092/seori-project/issues) [![GitHub stars](https://img.shields.io/github/stars/zes1092/seori-project)](https://github.com/zes1092/seori-project/stargazers)
 # 🟣 seori-project
+
+> Collection to all of App Academy's coding challenges and projects
+
 
 ```
 Start date: 8/05/2022
 Completion date: ~
 ```
+## Outline 
 ### 1 :: Web Development Fundamentals
 
 - Javascript Fundamentals 
@@ -117,6 +122,32 @@ Completion date: ~
 - Docker Images 
 - Docker Compose
 - Microservices Applied
+
+## Authors
+
+👤 **Ze Sheng**
+
+- GitHub: [@zes1092](https://github.com/githubhandle](https://github.com/zes1092/))
+- Twitter: [@zes1092](https://twitter.com/twitterhandle](https://twitter.com/zes1092))
+- LinkedIn: [@zes1092](https://linkedin.com/in/linkedinhandle](https://www.linkedin.com/in/zes1092/))
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- [App Academy](https://my.appacademy.io/)
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
 
 
 
