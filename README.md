@@ -1,3 +1,4 @@
+[![GitHub issues](https://img.shields.io/github/issues/zes1092/seori-project)](https://github.com/zes1092/seori-project/issues) [![GitHub stars](https://img.shields.io/github/stars/zes1092/seori-project)](https://github.com/zes1092/seori-project/stargazers)
 # 🟣 seori-project
 
 ```
