@@ -1,6 +1,5 @@
 ![](https://img.shields.io/badge/-zes1092-blueviolet)  [![GitHub issues](https://img.shields.io/github/issues/zes1092/seori-project)](https://github.com/zes1092/seori-project/issues) [![GitHub stars](https://img.shields.io/github/stars/zes1092/seori-project)](https://github.com/zes1092/seori-project/stargazers)
 # 🟣 seori-project
-# Project Name
 
 > Collection to all of App Academy's coding challenges and projects
 
