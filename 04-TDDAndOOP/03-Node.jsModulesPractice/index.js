@@ -1,10 +1,13 @@
 
 // Your code here
+const giveMessageToMrsPotato = require("./send-messages/give-message-to-mrs-potato"); 
+const sayHelloTo = require("./send-messages/say-hello-to"); 
+const { message1, message2, message3 } = require("./messages/index"); 
 
 /****************************************************************************/
 /******************* DO NOT EDIT CODE BELOW THIS LINE ***********************/
 
 sayHelloTo("Mr. Potato");
-giveMessageToMrsPotato(msg1);
-giveMessageToMrsPotato(msg2);
-giveMessageToMrsPotato(msg3);
+giveMessageToMrsPotato(message1);
+giveMessageToMrsPotato(message2);
+giveMessageToMrsPotato(message3);
