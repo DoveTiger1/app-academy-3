@@ -4,7 +4,7 @@
 
 > limiting the impact of changing your code.
 
-## Makes code easier to change and easier to identify the section of code that needs to be changed. 
+## Makes code easier to change and easier to identify the section of code that needs to be change 
 
 Consider the function for abbreviating words in a sentence. If a word in the sentence is longer than 3 characters, shorten it to be three characters without any vowels.
 
