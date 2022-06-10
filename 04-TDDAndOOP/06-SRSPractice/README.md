@@ -1,14 +1,23 @@
-# Exercise: Reading Tests
+# Practice: Single Responsibility Principle
 
-In this exercise, you will deduce what some given test specs are testing for.
+In this practice, you will be refactoring code to follow the Single
+Responsibility Principle.
 
 ## Set Up
 
-Clone the exercise from the [starter].
+Clone the practice from the [starter].
 
-## Instructions
+Run `npm install` to install all dependencies.
 
-Take a look at the __test/specs.js__ file provided to you. Deduce what the file
-is testing.
+## Directions
 
-[starter]: https://github.com/appacademy/practice-for-week-04-reading-tests-exercise
+Take a look at the `bakeAndSellPies` function in the __practice.js__ file. This
+function passes all the specs if you run `npm test`, but the function is doing
+too much. Refactor the function into multiple helper functions to follow the
+Single-Responsibility Principle.
+
+When you are sure that you have successfully refactored the code, run `npm test`
+to see if the functions still return the correct information by making sure all
+the test specs still pass.
+
+[starter]: https://github.com/appacademy/practice-for-week-04-single-responsibility-principle
