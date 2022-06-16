@@ -125,13 +125,13 @@ Completion date: ~
 
 ## Authors
 
-👤 **Ze Sheng**
+**Ze Sheng**
 
-- GitHub: [@zes1092]((https://github.com/zes1092/)
+- GitHub: [@zes1092](https://github.com/zes1092/)
 - Twitter: [@zes1092](https://twitter.com/zes1092)
 - LinkedIn: [@zes1092](https://www.linkedin.com/in/zes1092/)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!
 
@@ -139,13 +139,13 @@ Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a star if you like this project.
 
 ## Acknowledgments
 
-- [App Academy](https://my.appacademy.io/)
+[App Academy](https://my.appacademy.io/) for making an acessible curriculum to learn software development at my own pace. 
 
-## 📝 License
+## License
 
 This project is [MIT](./MIT.md) licensed.
 
