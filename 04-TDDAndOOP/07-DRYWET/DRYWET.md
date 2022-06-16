@@ -6,6 +6,8 @@
 > WET: write everything twice 
 
 - makes code easier to change and refactor 
+- makes more maintainable 
+- makes code easier to debug
 
 ## Consecutive Numbers 
 Suppose you have a function that returns true when an array of numbers when three numbers are consecutive, otherwise return false. 
