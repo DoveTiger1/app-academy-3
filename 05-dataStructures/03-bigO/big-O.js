@@ -8,6 +8,6 @@
 
 // Best Case (big-omega)
 
-// Average Case (big-theta)
+// Average Case (big-theta) 
 
 // Worse Case (big-O) usually used as average case 
