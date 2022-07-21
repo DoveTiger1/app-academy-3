@@ -77,7 +77,7 @@
 <!-- ![breaux.io](https://scale.com/_next/image?url=%2Fstatic%2Fimg%2Findex%2Fdata-centric%2Fannotate.png&w=256&q=75)
 [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-> Collection to all of App Academy's Open coding challenges and projects
+> App Academy Open is identical to App Academy's in-person full-time software engineering curriculum. It covers material including fundamentals such as data structures and algorithms, design patterns, scalability, OOP, TDD, computational complexity, and software engineering best practices. Programming languages and technologies include Python, JavaScript, React-Redux, SQL, Git, HTML and CSS.
 
 <!-- There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
