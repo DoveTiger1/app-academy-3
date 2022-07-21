@@ -329,9 +329,9 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/breaux.io`)
+2. Create your Feature Branch (`git checkout -b feature/seori.io`)
 3. Commit your Changes (`git commit -m 'Add some feature'`)
-4. Push to the Branch (`git push origin feature/breaux.io`)
+4. Push to the Branch (`git push origin feature/seori.io`)
 5. Open a Pull Request
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -352,7 +352,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Ze Sheng - [@zes1092](https://twitter.com/zes1092) - zesh3ng@gmail.com
 
-Project Link: [https://github.com/zes1092/breaux.io/](https://github.com/zes1092/breaux.io/)
+Project Link: [https://github.com/zes1092/seori.io/](https://github.com/zes1092/seori.io/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
