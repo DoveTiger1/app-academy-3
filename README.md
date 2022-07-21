@@ -32,14 +32,14 @@
   <p align="center">
     App Academy Curriculum 
     <br />
-    <a href="https://github.com/zes1092/breaux.io/blob/main/README.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/zes1092/seori.io/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/zes1092/breaux.io/">View Demo</a>
+    <a href="https://github.com/zes1092/seori.io/">View Demo</a>
     ·
-    <a href="https://github.com/zes1092/breaux.io/issues">Report Bug</a>
+    <a href="https://github.com/zes1092/seori.io/issues">Report Bug</a>
     ·
-    <a href="https://github.com/zes1092/breaux.io/issues">Request Feature</a>
+    <a href="https://github.com/zes1092/seori.io/issues">Request Feature</a>
   </p>
 </div>
 
