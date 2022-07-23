@@ -52,7 +52,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Outline</a></li>
+        <li><a href="#outline">Outline</a></li>
       </ul>
     </li>
     <li>
@@ -358,7 +358,7 @@ Project Link: [https://github.com/zes1092/seori.io/](https://github.com/zes1092/
 
 
 
- ACKNOWLEDGMENTS 
+ <!-- ACKNOWLEDGMENTS --> 
  ## Acknowledgments
 
 [App Academy](https://my.appacademy.io/) for making an acessible curriculum to learn software development at my own pace. 
