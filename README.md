@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/-zes1092-blueviolet)  [![GitHub issues](https://img.shields.io/github/issues/zes1092/seori-project)](https://github.com/zes1092/seori-project/issues)  [![GitHub stars](https://img.shields.io/github/stars/zes1092/seori-project)](https://github.com/zes1092/seori-project/stargazers)
+![](https://img.shields.io/badge/-zes1092-blueviolet)  [![GitHub issues](https://img.shields.io/github/issues/zes1092/seori-project)](https://github.com/zes1092/seori-project/issues) ![](https://img.shields.io/github/forks/zes1092/seori.io) ![](https://img.shields.io/github/stars/zes1092/seori.io) ![](https://img.shields.io/github/license/zes1092/seori.io)
 
 <div id="top"></div>
 
