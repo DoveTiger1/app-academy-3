@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/-zes1092-blueviolet)  [![GitHub issues](https://img.shields.io/github/issues/zes1092/seori-project)](https://github.com/zes1092/seori-project/issues) ![](https://img.shields.io/github/forks/zes1092/seori.io) ![](https://img.shields.io/github/stars/zes1092/seori.io) ![](https://img.shields.io/github/license/zes1092/seori.io)
-
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
@@ -10,15 +8,12 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<!--
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
--->
 
+![](https://img.shields.io/badge/-zes1092-blueviolet) 
+[![GitHub issues](https://img.shields.io/github/issues/zes1092/seori-project)](https://github.com/zes1092/seori-project/issues)
+![](https://img.shields.io/github/forks/zes1092/seori.io)
+![](https://img.shields.io/github/stars/zes1092/seori.io)
+![](https://img.shields.io/github/license/zes1092/seori.io)
 
 <!-- PROJECT LOGO -->
 <br />
