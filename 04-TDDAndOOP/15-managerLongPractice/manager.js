@@ -18,21 +18,20 @@ class Manager extends Employee {
 
     calculateBonus(multiplier) { // override method in parent class 
         if (this instanceof Manager) { 
-            return (this.salary + this._totalSubSalary(this.employees)) * multiplier;
+            return (this.salary + this._totalSubSalary()) * multiplier;
         } 
     }
 
-    // does not pass test 4 and 5
-    _totalSubSalary(employeesList) { 
+    _totalSubSalary() { 
         let sum = 0; 
-        
-        employeesList.forEach((employee) => {
+        this.employees.forEach((employee) => {
             if (employee instanceof Manager) { 
                 sum += employee.salary + employee._totalSubSalary(employee.employees);
             } else { 
                 sum += employee.salary;
             } 
         });
+    
 
         return sum; 
     }
