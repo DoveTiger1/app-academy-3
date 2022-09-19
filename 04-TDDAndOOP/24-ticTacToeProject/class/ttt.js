@@ -18,95 +18,85 @@ class TTT {
     Screen.setGridlines(true);
 
     // Replace this with real commands
-    Screen.addCommand('t', 'test command (remove)', TTT.testCommand);
-
+    Screen.addCommand('w', 'Move Up', this.cursor.up.bind(this.cursor));
+    Screen.addCommand('s', 'Move Down', this.cursor.down.bind(this.cursor));
+    Screen.addCommand('a', 'Move Left', this.cursor.left.bind(this.cursor));
+    Screen.addCommand('d', 'Move Right', this.cursor.right.bind(this.cursor));
+    Screen.addCommand(`space`, `Place Token`, TTT.turn.bind(this));
+    
     Screen.render();
   }
 
-  // Remove this
-  static testCommand() {
-    console.log("TEST COMMAND");
+  static turn() { 
+    Screen.render(); 
+    Screen.setGrid(this.cursor.row, this.cursor.col, this.playerTurn); 
+
+    this.playerTurn == "O" ? this.playerTurn = "X" : this.playerTurn = "O";
+
+    const winner = TTT.checkWin(this.grid);
+    
+    winner ? TTT.endGame(winner): Screen.render();
   }
 
-  // static emptyGrid(grid) { 
-  //   for (let i = 0; i < 3; i++) {
-  //     for (let j = 0; j < 3; j++) {
-  //       if (grid[i][j] !== ' ') {
-  //         return false;
-  //       }
-  //     }
-  //   }
-  //   return true;
-  // }
+  static flipGrid(grid) { 
+    let newGrid = []; 
 
-  static winnerHorizontal(grid, letter) { 
-    for (let i = 0; i < 3; i++) {
-      if (grid[i][0] === letter && grid[i][1] === letter && grid[i][2] === letter) {
-        return true; 
-      }
+    for (const col in grid) { 
+      let flipped = grid.map(row => row[col]);
+      newGrid.push(flipped);
     }
-    return false; 
-  }
 
-  static winnerVertical(grid, letter) { 
-    for (let i = 0; i < 3; i++) {
-      if (grid[0][i] === letter && grid[1][i] === letter && grid[2][i] === letter) {
-        return true; 
-      }
-    }
-    return false; 
+    return newGrid; 
   }
-
-  static winnerDiagonal(grid, letter) { 
-    if (grid[0][0] === letter && grid[1][1] === letter && grid[2][2] === letter) {
-      return true; 
-    } else if (grid[0][2] === letter && grid[1][1] === letter && grid[2][0] === letter) {
-      return true; 
-    } else {
-      return false; 
-    }
-  }
-
-  static checkTie(grid) { 
-    for (let i = 0; i < 3; i++) {
-      for (let j = 0; j < 3; j++) {
-        if (grid[i][j] !== 'X' && grid[i][j] !== 'O') {
-          return false;
-        }
-      }
-    }
-    return true;
-  }
-
 
   static checkWin(grid) {
     // Return 'X' if player X wins
     // Return 'O' if player O wins
     // Return 'T' if the game is a tie
     // Return false if the game has not ended
-  
-    // if (TTT.emptyGrid(grid)) { 
-    //   return false; 
-    // } 
 
-    if (TTT.winnerHorizontal(grid, 'X') || TTT.winnerVertical(grid, 'X')
-        || TTT.winnerDiagonal(grid, 'X')) {
-      return `X`;
+    const mirroredGrid = TTT.flipGrid(grid); 
+
+    let players = ["X", "O"]; 
+
+    for (const player in players) { 
+      // Check for horizontal wins
+      for (const row in grid) { 
+        if (grid[row].every(el => el == players[player])) { 
+          return players[player]; 
+        }
+      }
+
+      // Check for vertical wins 
+      for (const col in mirroredGrid) { 
+        if (mirroredGrid[col]. every(el => el == players[player])) { 
+          return players[player]; 
+        }
+      }  
+
+      // Check for diagonal wins
+      if (
+        grid[0][0] == players[player] && 
+        grid[1][1] == players[player] &&
+        grid[2][2] == players[player]
+      ) { 
+        return players[player]; 
+      } else if (
+        grid[0][2] == players[player] && 
+        grid[1][1] == players[player] &&
+        grid[2][0] == players[player]
+      ) { 
+        return players[player]; 
+      }
+      
+      if (grid.every(row => row.every (v => v != ' '))) { 
+        return 'T'; 
+      } else { 
+        return false;
+      }
     }
-
-    if (TTT.winnerHorizontal(grid, 'O') || TTT.winnerVertical(grid, 'O')
-        || TTT.winnerDiagonal(grid, 'O')) {
-      return `O`;
-    }
-
-    if (TTT.checkTie(grid)) {
-      return `T`;
-    }
-
-    return false; 
   }
 
- 
 
   static endGame(winner) {
     if (winner === 'O' || winner === 'X') {
