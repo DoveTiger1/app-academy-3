@@ -57,7 +57,7 @@ class TTT {
 
     const mirroredGrid = TTT.flipGrid(grid); 
 
-    let players = ["X", "O"]; 
+    let players = ["O", "X"]; 
 
     for (const player in players) { 
       // Check for horizontal wins
@@ -88,12 +88,12 @@ class TTT {
       ) { 
         return players[player]; 
       }
-      
-      if (grid.every(row => row.every (v => v != ' '))) { 
-        return 'T'; 
-      } else { 
-        return false;
-      }
+    }
+     // Check for tie game 
+    if (grid.every(row => row.every (v => v != ' '))) { 
+      return 'T'; 
+    } else { 
+      return false;
     }
   }
 

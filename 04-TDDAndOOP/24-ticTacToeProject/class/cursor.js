@@ -44,7 +44,7 @@ class Cursor {
 
   down = () => {
     // Move cursor down
-    if (this.row < 2) { 
+    if (this.row < this.numRows - 1) { 
       this.movementHelper("down");
     }
   }
@@ -56,7 +56,7 @@ class Cursor {
   }
 
   right = () => { 
-    if (this.col < 2) {
+    if (this.col < this.numCols - 1) {
       this.movementHelper("right");
    }
   }
