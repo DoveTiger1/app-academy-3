@@ -10,10 +10,10 @@
 -->
 
 ![](https://img.shields.io/badge/-zes1092-blueviolet) 
-[![GitHub issues](https://img.shields.io/github/issues/zes1092/seori-project)](https://github.com/zes1092/seori-project/issues)
-![](https://img.shields.io/github/forks/zes1092/seori.io)
-![](https://img.shields.io/github/stars/zes1092/seori.io)
-![](https://img.shields.io/github/license/zes1092/seori.io)
+[![GitHub issues](https://img.shields.io/github/issues/zes1092/app-academy)](https://github.com/zes1092/seori-project/issues)
+![](https://img.shields.io/github/forks/zes1092/app-academy)
+![](https://img.shields.io/github/stars/zes1092/app-academy)
+![](https://img.shields.io/github/license/zes1092/app-academy)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -22,19 +22,19 @@
     <img src="https://scale.com/_next/image?url=%2Fstatic%2Fimg%2Findex%2Fdata-centric%2Fautomate.png&w=256&q=75" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">seori.io</h3>
+  <h3 align="center">app-academy</h3>
 
   <p align="center">
     App Academy Curriculum 
     <br />
-    <a href="https://github.com/zes1092/seori.io/blob/main/README.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/zes1092/app-academy/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/zes1092/seori.io/">View Demo</a>
+    <a href="https://github.com/zes1092/app-academy/">View Demo</a>
     ·
-    <a href="https://github.com/zes1092/seori.io/issues">Report Bug</a>
+    <a href="https://github.com/zes1092/app-academy/issues">Report Bug</a>
     ·
-    <a href="https://github.com/zes1092/seori.io/issues">Request Feature</a>
+    <a href="https://github.com/zes1092/app-academy/issues">Request Feature</a>
   </p>
 </div>
 
@@ -280,9 +280,9 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/vy.io`)
+2. Create your Feature Branch (`git checkout -b feature/app-academy/`)
 3. Commit your Changes (`git commit -m 'Add some feature'`)
-4. Push to the Branch (`git push origin feature/vy.io`)
+4. Push to the Branch (`git push origin feature/app-academy/`)
 5. Open a Pull Request
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -305,16 +305,13 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Ze Sheng - [@zes1092](https://twitter.com/zes1092) - zesh3ng@gmail.com
 
-Project Link: [https://github.com/zes1092/vy.io/](https://github.com/zes1092/vy.io/)
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
  <!-- ACKNOWLEDGMENTS --> 
  ## Acknowledgments
 
-[App Academy](https://my.appacademy.io/) for making an acessible curriculum to learn software development at my own pace. 
+[App Academy](https://my.appacademy.io/) for making an accessible curriculum to learn software development at my own pace. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
