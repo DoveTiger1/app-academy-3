@@ -27,15 +27,15 @@ class TTT {
     Screen.render();
   }
 
-  static turn() { 
-    Screen.render(); 
-    Screen.setGrid(this.cursor.row, this.cursor.col, this.playerTurn); 
+  static turn() {
+    Screen.render();
+    Screen.setGrid(this.cursor.row, this.cursor.col, this.playerTurn);
 
     this.playerTurn == "O" ? this.playerTurn = "X" : this.playerTurn = "O";
 
-    const winner = TTT.checkWin(this.grid);
-    
-    winner ? TTT.endGame(winner): Screen.render();
+    const winner = TTT.checkWin(Screen.grid);
+
+    !winner ? Screen.render() : TTT.endGame(winner);
   }
 
   static flipGrid(grid) { 
