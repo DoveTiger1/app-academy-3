@@ -28,6 +28,8 @@ class Cursor {
 
     directions == "left" ? this.col-- : null; 
     directions == "right" ? this.col++ : null;
+    directions == "down" ? this.row++ : null;
+    directions == "up" ? this.row-- : null;
 
     this.setBackgroundColor();
     Screen.render(); 
@@ -35,11 +37,20 @@ class Cursor {
 
   left() {
     // Move cursor left
-    (this.col < 0) ? this.movementHelper("left") : null; 
+    (this.col > 0) ? this.movementHelper("left") : null; 
   }
 
   right() {
-    (this.col < this.numCols) ? this.movementHelper("right") : null;
+    // Move cursor right
+    (this.col < this.numCols - 1) ? this.movementHelper("right") : null;
+  }
+
+  down() { 
+    (this.row < this.numRows - 1) ? this.movementHelper("down") : null; 
+  }
+
+  up() { 
+    (this.row > 0) ? this.movementHelper("up") : null; 
   }
 
 }
