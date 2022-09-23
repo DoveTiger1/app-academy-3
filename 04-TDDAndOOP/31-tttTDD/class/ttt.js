@@ -56,7 +56,6 @@ class TTT {
   }
 
   static comp() {
-    delete Screen.commands['c'];
     
     this.computer = new ComputerPlayer();
     TTT.reset();
@@ -83,14 +82,17 @@ class TTT {
   static computerMove() {
     let move = ComputerPlayer.getSmartMove(Screen.grid, "X");
     console.log(move);
+
     Screen.setGrid(move.row, move.col, "X");
+
     if(TTT.checkWin(Screen.grid)) {
       TTT.endGame(TTT.checkWin(Screen.grid));
     }
     this.playerTurn = "O";
     Screen.message = "Playing against computer. It is your turn (O).";
     Screen.render();
-    Screen.printCommands()
+
+    Screen.printCommands();
   }
 
   static place() {
