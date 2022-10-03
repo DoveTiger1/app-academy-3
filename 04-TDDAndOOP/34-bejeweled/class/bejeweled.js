@@ -21,42 +21,44 @@ class Bejeweled {
     Screen.initialize(8, 8);
     Screen.setGridlines(false);
 
+    // Last cursor position
     this.last = {
       char: Screen.grid[this.cursor.row][this.cursor.col],
       row: this.cursor.row,
       col: this.cursor.col
     };
 
-    Screen.addCommand("up", "move up", Bejeweled.moveUp.bind(this));
-    Screen.addCommand("down", "move down", Bejeweled.moveDown.bind(this));
-    Screen.addCommand("left", "move left", Bejeweled.moveLeft.bind(this));
-    Screen.addCommand("right", "move right", Bejeweled.moveRight.bind(this));
-    Screen.addCommand("return", "select fruit", Bejeweled.select.bind(this));
+    Screen.addCommand("up", "Move Up", Bejeweled.moveUp.bind(this));
+    Screen.addCommand("down", "Move Down", Bejeweled.moveDown.bind(this));
+    Screen.addCommand("left", "Move Left", Bejeweled.moveLeft.bind(this));
+    Screen.addCommand("right", "Move Right", Bejeweled.moveRight.bind(this));
+    Screen.addCommand("return", "Select Fruit", Bejeweled.select.bind(this));
 
     Bejeweled.addressMatches(Screen.grid, this, 0, true);
 
     this.score = 0;
     this.combo = 0;
-    Screen.message = `Score: ${this.score}\nCombo: ${this.combo}`;
+
+    Screen.message = `Score: ${this.score}\n Combo: ${this.combo}`;
 
     this.cursor.setBackgroundColor();
     Screen.render();
   }
 
   static changeCommands(context) {
-    Screen.commands["up"].description = "select fruit above";
+    Screen.commands["up"].description = "Select fruit above";
     Screen.commands["up"].action = Bejeweled.selectAbove.bind(context);
 
-    Screen.commands["down"].description = "select fruit below";
+    Screen.commands["down"].description = "Select fruit below";
     Screen.commands["down"].action = Bejeweled.selectBelow.bind(context);
 
-    Screen.commands["left"].description = "select fruit to the left";
+    Screen.commands["left"].description = "Select fruit to the left";
     Screen.commands["left"].action = Bejeweled.selectLeft.bind(context);
 
-    Screen.commands["right"].description = "select fruit to the right";
+    Screen.commands["right"].description = "Select fruit to the right";
     Screen.commands["right"].action = Bejeweled.selectRight.bind(context);
 
-    Screen.commands["return"].description = "unselect fruit";
+    Screen.commands["return"].description = "Unselect fruit";
     Screen.commands["return"].action = Bejeweled.changeCommandsBack.bind(context, context);
 
     Screen.render();
@@ -67,19 +69,19 @@ class Bejeweled {
     context.cursor.cursorColor = "white";
     context.cursor.setBackgroundColor();
 
-    Screen.commands["up"].description = "move up";
+    Screen.commands["up"].description = "Move up";
     Screen.commands["up"].action = Bejeweled.moveUp.bind(context);
 
-    Screen.commands["down"].description = "move down";
+    Screen.commands["down"].description = "Move down";
     Screen.commands["down"].action = Bejeweled.moveDown.bind(context);
 
-    Screen.commands["left"].description = "move left";
+    Screen.commands["left"].description = "Move left";
     Screen.commands["left"].action = Bejeweled.moveLeft.bind(context);
 
-    Screen.commands["right"].description = "move right";
+    Screen.commands["right"].description = "Move right";
     Screen.commands["right"].action = Bejeweled.moveRight.bind(context);
 
-    Screen.addCommand("return", "select fruit", Bejeweled.select.bind(context));
+    Screen.addCommand("return", "Select Fruit", Bejeweled.select.bind(context));
 
     Screen.render();
   }
@@ -87,6 +89,7 @@ class Bejeweled {
   static undo(context) {
     let center = Screen.grid[context.last.row][context.last.col];
     let adjacent = Screen.grid[context.cursor.row][context.cursor.col];
+
     Screen.setGrid(context.cursor.row, context.cursor.col, center);
     Screen.setGrid(context.last.row, context.last.col, adjacent);
 
@@ -94,6 +97,10 @@ class Bejeweled {
     context.cursor.setBackgroundColor();
   }
 
+  /////////////////////////////////////////////////////////////
+
+  // Swap two characters 
+  // Game mechanism
   static swap(context) {
     context.cursor.cursorColor = "white";
     context.cursor.setBackgroundColor();
@@ -117,6 +124,21 @@ class Bejeweled {
     Screen.render();
   }
 
+  static select() {
+    this.cursor.cursorColor = "yellow";
+    this.cursor.setBackgroundColor();
+
+    // Set last cursor position
+    this.last.char = Screen.grid[this.cursor.row][this.cursor.col];
+    this.last.row = this.cursor.row;
+    this.last.col = this.cursor.col;
+
+    Bejeweled.changeCommands(this);
+  }
+
+  /////////////////////////////////////////////////////////////
+  
+  // Cursor movements
   static selectAbove() {
     this.cursor.resetBackgroundColor();
 
@@ -142,16 +164,6 @@ class Bejeweled {
     Bejeweled.swap(this);
   }
 
-  static select() {
-    this.cursor.cursorColor = "yellow";
-    this.cursor.setBackgroundColor();
-    this.last.char = Screen.grid[this.cursor.row][this.cursor.col];
-    this.last.row = this.cursor.row;
-    this.last.col = this.cursor.col;
-    Bejeweled.changeCommands(this);
-
-  }
-
   static moveUp() {
     this.cursor.up();
   }
@@ -165,6 +177,10 @@ class Bejeweled {
     this.cursor.right();
   }
 
+  /////////////////////////////////////////////////////////////
+
+  // Game Logic 
+
   static addressMatches(grid, context, combo, startOfGame) {
 
     combo = combo || 1;
@@ -174,7 +190,7 @@ class Bejeweled {
       return;
     }
 
-    //change all matches to bomb
+    // change all matches to bomb
     matches.forEach(match => {
       Screen.setGrid(match.row, match.col, String.fromCodePoint(0x1F4A3));
       context.score += (1*combo);
@@ -213,18 +229,13 @@ class Bejeweled {
   }
 
   static fillUp(grid) {
-    grid.forEach(
-      (row, rowIndex) => {
-        row.forEach(
-          (column, columnIndex) => {
+    grid.forEach((row, rowIndex) => {
+        row.forEach((column, columnIndex) => {
             if (Screen.grid[rowIndex][columnIndex] === ("  ")) {
               Screen.setGrid(rowIndex, columnIndex, randomEmoji());
             }
-          }
-        );
-      }
-
-    );
+        });
+    });
   }
 
   static getFruits(grid) {
@@ -245,7 +256,6 @@ class Bejeweled {
   }
 
   static fall(grid, fruits, column) {
-
     for (let i = grid.length - 1; i >= 0; i--) {
       if (fruits[0]) {
         Screen.setGrid(i, column, fruits.shift())
@@ -255,7 +265,9 @@ class Bejeweled {
     }
   }
 
+  /////////////////////////////////////////////////////////////
 
+  // Matches 
   static checkForMatches(grid) {
     return [...Bejeweled.checkHorizontal(grid), ...Bejeweled.checkVertical(grid)];
   }
@@ -263,42 +275,42 @@ class Bejeweled {
   static checkHorizontal(grid) {
     let matches = [];
 
-    grid.forEach(
-      (row, index) => {
-        for (let i = 0; i < row.length - 2; i++) {
-          if(row[i] === row[i+1] && row[i] === row[i+2]) {
-            matches.push({row: index, col: i});
-            matches.push({row: index, col: i+1});
-            matches.push({row: index, col: i+2});
+    grid.forEach((row, index) => {
+      for (let i = 0; i < row.length - 2; i++) {
+        if(row[i] === row[i+1] && row[i] === row[i+2]) {
+          matches.push({row: index, col: i});
+          matches.push({row: index, col: i+1});
+          matches.push({row: index, col: i+2});
 
-            if (row[i] === row[i+3]) {
-              matches.push({row: index, col: i+3});
-              if (row[i] === row[i+4]) {
-                matches.push({row: index, col: i+4});
-                if (row[i] === row[i+5]) {
-                  matches.push({row: index, col: i+5});
-                  if (row[i] === row[i+6]) {
-                    matches.push({row: index, col: i+6});
-                    if (row[i] === row[i+7]) {
-                      matches.push({row: index, col: i+7});
-                    }
+          if (row[i] === row[i+3]) {
+            matches.push({row: index, col: i+3});
+            if (row[i] === row[i+4]) {
+              matches.push({row: index, col: i+4});
+              if (row[i] === row[i+5]) {
+                matches.push({row: index, col: i+5});
+                if (row[i] === row[i+6]) {
+                  matches.push({row: index, col: i+6});
+                  if (row[i] === row[i+7]) {
+                    matches.push({row: index, col: i+7});
                   }
                 }
               }
             }
-
           }
 
         }
+
       }
-    );
+    });
+
     return matches;
   }
 
   static checkVertical(grid) {
     let matches = [];
+    
     for (let i = 0; i < grid.length; i++) {
-      for (let j = 0; j < grid[0].length-2; j++) {
+      for (let j = 0; j < grid[0].length - 2; j++) {
         if (grid[j][i] === grid[j+1][i] && grid[j][i] === grid[j+2][i]) {
           matches.push({row: j, col: i});
           matches.push({row: j+1, col: i});
@@ -319,14 +331,11 @@ class Bejeweled {
               }
             }
           }
-
         }
       }
     }
     return matches;
   }
-
-
 }
 
 module.exports = Bejeweled;
