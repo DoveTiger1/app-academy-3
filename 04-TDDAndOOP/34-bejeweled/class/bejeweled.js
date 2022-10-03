@@ -85,7 +85,6 @@ class Bejeweled {
   }
 
   static undo(context) {
-
     let center = Screen.grid[context.last.row][context.last.col];
     let adjacent = Screen.grid[context.cursor.row][context.cursor.col];
     Screen.setGrid(context.cursor.row, context.cursor.col, center);
@@ -96,7 +95,6 @@ class Bejeweled {
   }
 
   static swap(context) {
-
     context.cursor.cursorColor = "white";
     context.cursor.setBackgroundColor();
 
@@ -187,10 +185,6 @@ class Bejeweled {
       Screen.message = `Good move!\nScore: ${context.score}\nCombo: ${combo}`;
       Screen.render();
     });
-
-
-
-
 
     //add some delay
     setTimeout(() => {
