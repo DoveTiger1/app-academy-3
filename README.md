@@ -9,16 +9,16 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-![](https://img.shields.io/badge/-zes1092-blueviolet) 
-[![GitHub issues](https://img.shields.io/github/issues/zes1092/app-academy)](https://github.com/zes1092/seori-project/issues)
-![](https://img.shields.io/github/forks/zes1092/app-academy)
-![](https://img.shields.io/github/stars/zes1092/app-academy)
-![](https://img.shields.io/github/license/zes1092/app-academy)
+![](https://img.shields.io/badge/-zeshng-blueviolet) 
+[![GitHub issues](https://img.shields.io/github/issues/zeshng/app-academy)](https://github.com/zeshng/seori-project/issues)
+![](https://img.shields.io/github/forks/zeshng/app-academy)
+![](https://img.shields.io/github/stars/zeshng/app-academy)
+![](https://img.shields.io/github/license/zeshng/app-academy)
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/zes1092/archetypes.io/">
+  <a href="https://github.com/zeshng/archetypes.io/">
     <img src="https://scale.com/_next/image?url=%2Fstatic%2Fimg%2Findex%2Fdata-centric%2Fautomate.png&w=256&q=75" alt="Logo" width="80" height="80">
   </a>
 
@@ -27,14 +27,14 @@
   <p align="center">
     App Academy Curriculum 
     <br />
-    <a href="https://github.com/zes1092/app-academy/blob/main/README.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/zeshng/app-academy/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/zes1092/app-academy/">View Demo</a>
+    <a href="https://github.com/zeshng/app-academy/">View Demo</a>
     ·
-    <a href="https://github.com/zes1092/app-academy/issues">Report Bug</a>
+    <a href="https://github.com/zeshng/app-academy/issues">Report Bug</a>
     ·
-    <a href="https://github.com/zes1092/app-academy/issues">Request Feature</a>
+    <a href="https://github.com/zeshng/app-academy/issues">Request Feature</a>
   </p>
 </div>
 
@@ -303,7 +303,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Ze Sheng - [@zes1092](https://twitter.com/zes1092) - zesh3ng@gmail.com
+Ze Sheng - [@zeshng](https://twitter.com/zeshng) - zesh3ng@gmail.com
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
