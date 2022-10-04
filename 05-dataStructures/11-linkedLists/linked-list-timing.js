@@ -12,36 +12,41 @@ let n = 20000
 let ll = new LinkedList();
 
 // ll.addToHead is O(1) makes this for loop O(n)
-console.time("LL: addToHead")
+console.time("LL: addToHead"); 
 for (let i = 0 ; i < n ; i++) {
   ll.addToHead(i);
 }
-console.timeEnd("LL: addToHead")
-
+console.timeEnd("LL: addToHead"); 
 
 // ll.addToTail is O(n) makes this loop O(n^2)
 
 ll = new LinkedList();
-console.time("LL: addToTail")
+console.time("LL: addToTail");
 for (let i = 0 ; i < n ; i++) {
   ll.addToTail(i);
 }
-console.timeEnd("LL: addToTail")
+console.timeEnd("LL: addToTail"); 
 
 
 // dll.addToHead is O(1) makes this loop O(n)
 let dll = new DoublyLinkedList();
-console.time("DLL: addToHead")
+console.time("DLL: addToHead");
 for (let i = 0 ; i < n ; i++) {
   dll.addToHead(i);
 }
-console.timeEnd("DLL: addToHead")
+console.timeEnd("DLL: addToHead");
 
 
 // dll.addToTail is O(1) makes this loop O(n)
 dll = new DoublyLinkedList();
-console.time("DLL: addToTail")
+console.time("DLL: addToTail");
 for (let i = 0 ; i < n ; i++) {
   dll.addToTail(i);
 }
-console.timeEnd("DLL: addToTail")
+console.timeEnd("DLL: addToTail");
+
+
+// LL: addToHead: 11.2ms
+// LL: addToTail: 597.918ms
+// DLL: addToHead: 6.062ms
+// DLL: addToTail: 7.007ms
